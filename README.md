@@ -11,7 +11,7 @@ Choose your stats and display them either in a panel or as a floating element on
  
 ```bash
 git clone https://github.com/ivnqc/plasma-sensors.git
-cd plasma-sensors
+cd plasma-sensors/package
 kpackagetool6 -t Plasma/Applet -i .
 ```
  
