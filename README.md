@@ -1,5 +1,5 @@
 # plasma-sensors
-Choose your stats and display them either in a panel or as a floating element on your desktop. The information is retrieved using [libksysguard](https://github.com/kde/libksysguard), which provides a unified interface for accessing system and hardware statistics, abstracting away many hardware-specific details.
+This pure QML front end lets you choose your stats, customize their order and names, and view their live values either in a panel or as a floating element on your desktop. Sensor data is retrieved using [libksysguard](https://github.com/kde/libksysguard), KDE's own sensor infrastructure. The plasmoid has been developed and tested on GNU/Linux, and also tested on FreeBSD.
 
 ## Panel
 ![Compact representation](images/compact.png)
