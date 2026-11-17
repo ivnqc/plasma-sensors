@@ -44,28 +44,6 @@ PlasmoidItem {
     }
 
     // Tooltip
-    // One hidden Sensor per selected ID, so the tooltip can show every value.
-
-    Instantiator {
-        id: tooltipSensors
-        model: root.sensorIds
-        delegate: Sensors.Sensor {
-            required property string modelData
-            sensorId: modelData
-        }
-    }
-
-    function tooltipText() {
-        const lines = [];
-        for (let i = 0; i < tooltipSensors.count; ++i) {
-            const s = tooltipSensors.objectAt(i);
-            if (s) {
-                lines.push(i18n("%1: %2", labelFor(s.sensorId, s), valueText(s, i18n("N/A"))));
-            }
-        }
-        return lines.join("\n");
-    }
-
     toolTipMainText: root.widgetTitle
     toolTipSubText: tooltipText()
 
