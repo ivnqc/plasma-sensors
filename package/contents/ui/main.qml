@@ -44,8 +44,7 @@ PlasmoidItem {
     }
 
     // Tooltip
-    toolTipMainText: root.widgetTitle
-    toolTipSubText: tooltipText()
+    toolTipSubText: ""
 
     // Compact representation
 
