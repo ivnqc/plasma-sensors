@@ -60,7 +60,18 @@ PlasmoidItem {
 
         MouseArea {
             anchors.fill: parent
-            onClicked: root.expanded = !root.expanded
+            hoverEnabled: true
+            Rectangle {
+                anchors.fill: parent
+                radius: 6
+                color: PlasmaCore.Theme.textColor
+                opacity: parent.pressed ? 0.12 :
+                         parent.containsMouse ? 0.05 : 0
+
+                Behavior on opacity {
+                    NumberAnimation { duration: 150 }
+                }
+            }
         }
 
         // Fallback icon so the widget never collapses to nothing
